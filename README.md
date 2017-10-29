@@ -84,19 +84,25 @@ Process finished with exit code 0
 # Test Cases
 In order to test the validity of the program, various test cases are written. These test cases are to see the response of the program assuming that the path of the file is given correctly. The test files are located under **SampleTestFiles** folder.
 The files test:
- - "test1-(emptyFile).tsv"
+ - 'test1-(emptyFile).tsv'
     - The file provided is empty
- - "test2-(oneInstance).tsv"
+
+ - 'test2-(oneInstance).tsv'
     - The file consists of one point, no other point to compare distance with
- - "test3-(twoSameInstances).tsv"
+
+ - 'test3-(twoSameInstances).tsv'
     - The file consists of two points that have same coordinate values
- - "test4-(twoDifferentInstances).tsv"
+
+ - 'test4-(twoDifferentInstances).tsv'
     - The file consists of two points that have different coordinate values
- - "test5-(manySameInstances).tsv"
+
+ - 'test5-(manySameInstances).tsv'
     - The file consists of 32 points that have same coordinate values
- - "test6-(includingCharacter).tsv"
+
+ - 'test6-(includingCharacter).tsv'
     - The file consists of 8 points all having integer values expect second row including a series of characters hidden
- - "test7-(includingComma).tsv"
+    
+ - 'test7-(includingComma).tsv'
     - The file consists of comma as a decimal place separator instead of period
 
 # Timing
