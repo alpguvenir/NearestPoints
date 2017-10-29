@@ -96,3 +96,6 @@ The program is executed for each of the sample files 3 times:
 |sample_input_4_4       |    148     nanoseconds |   147    nanoseconds  |   184     nanoseconds |
 |sample_input_10_100    |    5218    nanoseconds |   7716   nanoseconds  |   6414    nanoseconds |
 |sample_input_100_100   |    26815   nanoseconds |   17581  nanoseconds  |   22630   nanoseconds |
+
+The specification of the computer that the testing was performed:
+ - Processor 2.4 GHz Intel Core i5
