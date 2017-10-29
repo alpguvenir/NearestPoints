@@ -101,7 +101,7 @@ The files test:
 
  - 'test6-(includingCharacter).tsv'
     - The file consists of 8 points all having integer values expect second row including a series of characters hidden
-    
+
  - 'test7-(includingComma).tsv'
     - The file consists of comma as a decimal place separator instead of period
 
@@ -121,5 +121,13 @@ The program is executed for each of the sample files 3 times:
 |sample_input_100_100   |    26815   nanoseconds |   17581  nanoseconds  |   22630   nanoseconds |
 
 # Experiment
-An experiment is conducted on changing the number of points (rows) and number of dimensions (columns) independently. The input used for the experiment can be found under **ExperimentFiles**.
+An experiment is conducted on changing the number of points (rows) and number of dimensions (columns) independently. The input used for the experiment can be found under **ExperimentFiles**. For filling the data randbetween() function of Excel program is used with arguments -1000000 for bottom and 1000000 for top.
 
+In the following experiment computation (dependent variable) time was measured while, the coordinate dimension (constant variable) is kept as 10 and the number of instances (independent variable) has been selected to be 10, 100, 1000 and 10000.
+
+|                                   |    Trial 1             |   Trial 2            | Trial 3               |
+|-----------------------------------|-----------------------:|---------------------:|----------------------:|
+|instance_10_dimension_10.tsv       |   382     nanoseconds  |  251     nanoseconds |   239     nanoseconds |
+|instance_100_dimension_10.tsv      |   5370    nanoseconds  |  5521    nanoseconds |   5207    nanoseconds |
+|instance_1000_dimension_10.tsv     |   43495   nanoseconds  |  37857   nanoseconds |   42138   nanoseconds |
+|instance_10000_dimension_10.tsv    |   3815874 nanoseconds  |  3832878 nanoseconds |   3751713 nanoseconds |
