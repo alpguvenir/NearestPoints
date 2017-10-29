@@ -1,11 +1,9 @@
 # NearestPoints
-
 The purpose of the project is to read a text file where each line contains the coordinates of a multidimensional point. Furthermore, looks for the closest pair of points in the file. If the program finds the closest pair of points, it outputs the line numbers and the coordinates of the two closest points in to a file.
 
 The NearestCoordinates project is written in Java language, following the coding conventions stated in website of Oracle.
 
 # Asymptotical Running Time
-
 The algorithm works in the following way:
 
 ```java
@@ -46,7 +44,6 @@ As it was stated before, the points are in a multidimensional coordinate system.
 Thus, the algorithm works in the order of O(N<sup>2</sup>M).
 
 # Limitations
-
 The program takes the path of a '.tsv' file as an input from the user. Therefore at each execution, give path for only **one** file.
 The program finds the nearest pair of coordinates if:
  - The text file contains one point per line
@@ -84,9 +81,11 @@ the location you would like the output file to be saved:
 Process finished with exit code 0
 ```
 
-# Timing experiment
+# Timing
+For each of the sample inputs provided, a timing experiment is made using the System.nanoTime() function.
+The specification of the computer that the testing was performed:
+ - Processor 2.4 GHz Intel Core i5
 
-For each of the sample inputs provided, a timing experiment is made.
 The program is executed for each of the sample files 3 times:
 
 |                       |    Trial 1             |   Trial 2             | Trial 3               |
@@ -97,5 +96,6 @@ The program is executed for each of the sample files 3 times:
 |sample_input_10_100    |    5218    nanoseconds |   7716   nanoseconds  |   6414    nanoseconds |
 |sample_input_100_100   |    26815   nanoseconds |   17581  nanoseconds  |   22630   nanoseconds |
 
-The specification of the computer that the testing was performed:
- - Processor 2.4 GHz Intel Core i5
+# Experiment
+An experiment is conducted on changing the number of points (rows) and number of dimensions (columns) independently. The input used for the experiement can be found under ExperimentFiles.
+
