@@ -81,6 +81,10 @@ the location you would like the output file to be saved:
 Process finished with exit code 0
 ```
 
+# Test Cases
+In order to test the validity of the program, various test cases are written. These test cases are to see the response of the program assuming that the path of the file is given correctly. The test files are located under **SampleTestFiles** folder.
+
+
 # Timing
 For each of the sample inputs provided, a timing experiment is made using the System.nanoTime() function.
 The specification of the computer that the testing was performed:
@@ -97,5 +101,5 @@ The program is executed for each of the sample files 3 times:
 |sample_input_100_100   |    26815   nanoseconds |   17581  nanoseconds  |   22630   nanoseconds |
 
 # Experiment
-An experiment is conducted on changing the number of points (rows) and number of dimensions (columns) independently. The input used for the experiement can be found under ExperimentFiles.
+An experiment is conducted on changing the number of points (rows) and number of dimensions (columns) independently. The input used for the experiment can be found under **ExperimentFiles**.
 
