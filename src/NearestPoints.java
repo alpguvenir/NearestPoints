@@ -187,6 +187,7 @@ public class NearestPoints {
 
     public static void writeOutput(int minRowIndex1, int minRowIndex2, Scanner keyboard, Double[] row1, Double[] row2) throws IOException {
 
+        // Decimal format, if the number is a floating point number format according to 1 decimal place
         DecimalFormat df = new DecimalFormat("0.#");
 
         // Name of the output '.txt' file
