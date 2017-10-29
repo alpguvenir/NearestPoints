@@ -2,7 +2,7 @@
 
 The purpose of the project is to read a text file where each line contains the coordinates of a multidimensional point. Furthermore, looks for the closest pair of points in the file. If the program finds the closest pair of points, it outputs the line numbers and the coordinates of the two closest points in to a file.
 
-The NearestCoordinates project is written in Java language, following the coding conventions stated in Oracle website.
+The NearestCoordinates project is written in Java language, following the coding conventions stated in website of Oracle.
 
 # Asymptotical Running Time
 
