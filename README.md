@@ -90,8 +90,7 @@ The files test:
  - "test4-(twoDifferentInstances).tsv"  -> The file consists of two points that have different coordinate values
  - "test5-(manySameInstances).tsv"      -> The file consists of 32 points that have same coordinate values
  - "test6-(includingCharacter).tsv"     -> The file consists of 8 points all having integer values expect second row including a series of characters hidden
-
-
+ - "test7-(includingComma).tsv"         -> The file consists of comma as a decimal place separator instead of period
 
 # Timing
 For each of the sample inputs provided, a timing experiment is made using the System.nanoTime() function.
