@@ -112,13 +112,13 @@ The specification of the computer that the testing was performed:
 
 The program is executed for each of the sample files 3 times:
 
-|                       |    Trial 1             |   Trial 2             | Trial 3               |
-|-----------------------|-----------------------:|----------------------:|----------------------:|
-|sample_input_2_8       |    138     nanoseconds |   176    nanoseconds  |   200     nanoseconds |
-|sample_input_3_1000    |    38650   nanoseconds |   26385  nanoseconds  |   63300   nanoseconds |
-|sample_input_4_4       |    148     nanoseconds |   147    nanoseconds  |   184     nanoseconds |
-|sample_input_10_100    |    5218    nanoseconds |   7716   nanoseconds  |   6414    nanoseconds |
-|sample_input_100_100   |    26815   nanoseconds |   17581  nanoseconds  |   22630   nanoseconds |
+|                           |    Trial 1             |   Trial 2             | Trial 3               |
+|---------------------------|-----------------------:|----------------------:|----------------------:|
+|sample_input_2_8.tsv       |    138     nanoseconds |   176    nanoseconds  |   200     nanoseconds |
+|sample_input_3_1000.tsv    |    38650   nanoseconds |   26385  nanoseconds  |   63300   nanoseconds |
+|sample_input_4_4.tsv       |    148     nanoseconds |   147    nanoseconds  |   184     nanoseconds |
+|sample_input_10_100.tsv    |    5218    nanoseconds |   7716   nanoseconds  |   6414    nanoseconds |
+|sample_input_100_100.tsv   |    26815   nanoseconds |   17581  nanoseconds  |   22630   nanoseconds |
 
 # Experiment
 Two different experiments are conducted on changing the number of points (rows) and number of dimensions (columns) independently. The inputs used for the experiments can be found under **ExperimentFiles**. For filling the data randbetween() function of Excel program is used, with arguments -1000000 for bottom and 1000000 for top. For second experiment the transpose of the data used in Experiment 1 is used.
