@@ -30,8 +30,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="126" column="35" lean-forward="true" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
+            <state relative-caret-position="248">
+              <caret line="67" column="246" lean-forward="false" selection-start-line="67" selection-start-column="246" selection-end-line="67" selection-end-column="246" />
               <folding />
             </state>
           </provider>
@@ -92,6 +92,11 @@
             <path>
               <item name="NearestPoints" type="b2602c69:ProjectViewProjectNode" />
               <item name="NearestPoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NearestPoints" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NearestPoints" type="462c0819:PsiDirectoryNode" />
+              <item name="sample_in_out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NearestPoints" type="b2602c69:ProjectViewProjectNode" />
@@ -309,8 +314,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="126" column="35" lean-forward="true" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
+        <state relative-caret-position="248">
+          <caret line="67" column="246" lean-forward="false" selection-start-line="67" selection-start-column="246" selection-end-line="67" selection-end-column="246" />
           <folding />
         </state>
       </provider>
