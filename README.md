@@ -56,9 +56,16 @@ The program assumes that values given for each dimension are at the same scale. 
 
 The program asks for the name of the output '.txt' file, without giving the '.txt' extension, and the path for the file to be saved into. The program assumes the user enters a valid path.
 
+The program terminates when:
+ - The input is empty
+ - Input consists of 1 instance
+ - Input includes characters
+ - Input includes comma for decimal place separator
+ - The path provided is not correct
+
 The user should be aware that if such a '.txt' file exists with the given name at the given path, the program will override the file.
 
-The program round the floating point values to the nearest 1st decimal place
+The program round the floating point values to the nearest 1st decimal place.
 
 # Usage
 For using the NearestCoordinates, simply clone the project using 'git clone' command. Compile the project.
@@ -88,24 +95,45 @@ In order to test the validity of the program, various test cases are written. Th
 The files test:
  - 'test1-(emptyFile).tsv'
     - The file provided is empty
+    - Expect:
+        The file provided is empty
+        java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 
  - 'test2-(oneInstance).tsv'
     - The file consists of one point, no other point to compare distance with
+    - Expect:
+        The file provided is valid
+        There is only one point in the file, nothing to compare
 
  - 'test3-(twoSameInstances).tsv'
     - The file consists of two points that have same coordinate values
+    - Expect:
+        Normal execution, giving the two points as the output
 
  - 'test4-(twoDifferentInstances).tsv'
     - The file consists of two points that have different coordinate values
+    - Expect:
+        Normal execution, giving the two points as the output
 
  - 'test5-(manySameInstances).tsv'
     - The file consists of 32 points that have same coordinate values
+    - Expect:
+        Normal execution, giving the first two points as the output
 
  - 'test6-(includingCharacter).tsv'
     - The file consists of 8 points all having integer values expect second row including a series of characters hidden
+    - Expect:
+        The input in the file provided is in the wrong format
+        java.lang.NumberFormatException: For input string: "212454alp4984"
+        Error on row:1 and column: 1
 
  - 'test7-(includingComma).tsv'
     - The file consists of comma as a decimal place separator instead of period
+    - Expect:
+        The input in the file provided is in the wrong format
+        java.lang.NumberFormatException: For input string: "21345,44984"
+        Error on row:8 and column: 1
+
 
 # Timing
 For each of the sample inputs provided, a timing experiment is made using the System.nanoTime() function.

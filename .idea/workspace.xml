@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e4e5fdc8-720f-4e08-8a5b-bcc44a91667b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/NearestPoints.java" afterPath="$PROJECT_DIR$/src/NearestPoints.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +17,8 @@
       <file leaf-file-name="NearestPoints.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/NearestPoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="189" column="91" lean-forward="false" selection-start-line="189" selection-start-column="91" selection-end-line="189" selection-end-column="91" />
+            <state relative-caret-position="105">
+              <caret line="7" column="67" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="67" />
               <folding>
                 <element signature="e#0#8726#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="60" column="76" lean-forward="false" selection-start-line="60" selection-start-column="76" selection-end-line="60" selection-end-column="76" />
+            <state relative-caret-position="254">
+              <caret line="126" column="35" lean-forward="true" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -97,7 +96,7 @@
             <path>
               <item name="NearestPoints" type="b2602c69:ProjectViewProjectNode" />
               <item name="NearestPoints" type="462c0819:PsiDirectoryNode" />
-              <item name="sample_in_out" type="462c0819:PsiDirectoryNode" />
+              <item name="SampleTestFiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NearestPoints" type="b2602c69:ProjectViewProjectNode" />
@@ -299,8 +298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NearestPoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="189" column="91" lean-forward="false" selection-start-line="189" selection-start-column="91" selection-end-line="189" selection-end-column="91" />
+        <state relative-caret-position="105">
+          <caret line="7" column="67" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="67" />
           <folding>
             <element signature="e#0#8726#0" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -310,8 +309,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="60" column="76" lean-forward="false" selection-start-line="60" selection-start-column="76" selection-end-line="60" selection-end-column="76" />
+        <state relative-caret-position="254">
+          <caret line="126" column="35" lean-forward="true" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
           <folding />
         </state>
       </provider>
