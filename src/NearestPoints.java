@@ -44,7 +44,7 @@ public class NearestPoints {
             pair = nearestCoordinates(coordinateMatrix);
             // Timing end
             endTime = System.nanoTime();
-            System.out.println("Time elasped: " + (endTime - startTime) / 1000 + " nanoseconds");
+            System.out.println("Time elapsed: " + (endTime - startTime) / 1000 + " nanoseconds");
 
             // Write the output into a txt file
             writeOutput(pair[0], pair[1], keyboard, coordinateMatrix[pair[0]], coordinateMatrix[pair[1]]);

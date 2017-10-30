@@ -134,6 +134,13 @@ The files test:
         java.lang.NumberFormatException: For input string: "21345,44984"
         Error on row:8 and column: 1
 
+ - 'test8.tsv'
+    - The file consists of interpretable data
+        - Expect:
+            The file provided is valid
+            Points with minimum distance are at:
+            Row:388 and Row:752
+            Time elapsed: 44521 nanoseconds
 
 # Timing
 For each of the sample inputs provided, a timing experiment is made using the System.nanoTime() function.
