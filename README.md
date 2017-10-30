@@ -58,6 +58,8 @@ The program asks for the name of the output '.txt' file, without giving the '.tx
 
 The user should be aware that if such a '.txt' file exists with the given name at the given path, the program will override the file.
 
+The program round the floating point values to the nearest 1st decimal place
+
 # Usage
 For using the NearestCoordinates, simply clone the project using 'git clone' command. Compile the project.
 

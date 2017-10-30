@@ -2,7 +2,7 @@
  * NearestCoordinates.java
  * 29 October 2017
  * Version 1.0.0
- *  Alp Güvenir
+ * Alp Güvenir
 */
 
 // /Users/AlpGuvenir/Desktop/n2c/sample_in_out/sample_input_2_8.tsv
@@ -39,19 +39,18 @@ public class NearestPoints {
         long endTime;
 
         // Find the nearest coordinates
-        if(coordinateMatrix.length > 1) {
+        if (coordinateMatrix.length > 1) {
 
             // Timing begin
             startTime = System.nanoTime();
             pair = nearestCoordinates(coordinateMatrix);
             // Timing end
             endTime = System.nanoTime();
-            System.out.println("Time elasped: " + (endTime - startTime)/1000 + " nanoseconds");
+            System.out.println("Time elasped: " + (endTime - startTime) / 1000 + " nanoseconds");
 
             // Write the output into a txt file
             writeOutput(pair[0], pair[1], keyboard, coordinateMatrix[pair[0]], coordinateMatrix[pair[1]]);
-        }
-        else
+        } else
             System.out.println("There is only one point in the file, nothing to compare");
     } // main()
 
@@ -124,8 +123,8 @@ public class NearestPoints {
 
     public static void printMatrix(Double[][] coordinateMatrix) {
 
-        for(int rowIndex = 0; rowIndex < coordinateMatrix.length; rowIndex++) {
-            for(int colIndex = 0; colIndex < coordinateMatrix[0].length; colIndex++)
+        for (int rowIndex = 0; rowIndex < coordinateMatrix.length; rowIndex++) {
+            for (int colIndex = 0; colIndex < coordinateMatrix[0].length; colIndex++)
                 System.out.print(coordinateMatrix[rowIndex][colIndex] + " ");
             System.out.println();
         }
@@ -136,7 +135,7 @@ public class NearestPoints {
         int[] nearestCoordinates = new int[2];
         double minimumDistance = Double.POSITIVE_INFINITY;
         double squaredDistance = 0;
-        double squareroottDistance = 0;
+        double squarerootDistance = 0;
 
         // Two Double arrays for calculations
         Double[] row1 = null;
@@ -147,20 +146,20 @@ public class NearestPoints {
         nearestCoordinates[1] = -1;
 
         // Outer loop iterating on rows
-        for(int rowIndex = 0; rowIndex < coordinateMatrix.length - 1; rowIndex++) { // In the order of O(N-1)
+        for (int rowIndex = 0; rowIndex < coordinateMatrix.length - 1; rowIndex++) { // (N-1) times
 
             // Assign row1
             row1 = coordinateMatrix[rowIndex];
 
             // Inner loop for iterating on consecutive rows
-            for(int innerRowIndex = rowIndex + 1; innerRowIndex < coordinateMatrix.length; innerRowIndex++) { // In the order of O(((N-1)+1)/2)
+            for (int innerRowIndex = rowIndex + 1; innerRowIndex < coordinateMatrix.length; innerRowIndex++) { // (((N-1)+1)/2) times
 
                 // distance reinitialized to 0
                 squaredDistance = 0;
 
                 // Assign row2
                 row2 = coordinateMatrix[innerRowIndex];
-                for(int columnIndex = 0; columnIndex < row1.length; columnIndex++) { // In the order of O(M)
+                for (int columnIndex = 0; columnIndex < row1.length; columnIndex++) { // (M) times
                     squaredDistance += Math.pow((row1[columnIndex] - row2[columnIndex]), 2);
                 }
 
@@ -169,7 +168,7 @@ public class NearestPoints {
                 // squarerootDistance = Math.sqrt(distance);
 
                 // Euclidean distance comparison
-                if(squaredDistance < minimumDistance) {
+                if (squaredDistance < minimumDistance) {
                     nearestCoordinates[0] = rowIndex;
                     nearestCoordinates[1] = innerRowIndex;
 
@@ -187,9 +186,8 @@ public class NearestPoints {
 
     public static void writeOutput(int minRowIndex1, int minRowIndex2, Scanner keyboard, Double[] row1, Double[] row2) throws IOException {
 
-        // Decimal format, if the number is a floating point number format according to 1 decimal place
-
         // DecimalFormat df = new DecimalFormat("0"); // for rounding to nearest integer
+        // Decimal format, if the number is a floating point number format according to 1st decimal place
         DecimalFormat df = new DecimalFormat("0.#");
 
         // Name of the output '.txt' file
@@ -199,30 +197,30 @@ public class NearestPoints {
         String outputPath = setPath(keyboard);
 
         // The output text
-        int index = 0;
+        int index;
 
         // First row
-        String outputText = (minRowIndex1 + 1) + ":"; // minRowIndex1 + 1 since index starts from 0
-        for(index = 0; index < row1.length - 1; index++) {
-            outputText += df.format(row1[index]) + "\t";
+        StringBuilder outputText = new StringBuilder((minRowIndex1 + 1) + ":"); // minRowIndex1 + 1 since index starts from 0
+        for (index = 0; index < row1.length - 1; index++) {
+            outputText.append(df.format(row1[index])).append("\t");
         }
-        outputText += df.format(row1[index]) + "\n";
+        outputText.append(df.format(row1[index])).append("\n");
 
         // Second row
-        outputText += (minRowIndex2 + 1) + ":"; // minRowIndex2 + 1 since index starts from 0
-        for(index = 0; index < row2.length - 1; index++) {
-            outputText += df.format(row2[index]) + "\t";
+        outputText.append(minRowIndex2 + 1).append(":"); // minRowIndex2 + 1 since index starts from 0
+        for (index = 0; index < row2.length - 1; index++) {
+            outputText.append(df.format(row2[index])).append("\t");
         }
-        outputText += df.format(row2[index]) + "\n";
+        outputText.append(df.format(row2[index])).append("\n");
 
         // File creation
-        File directory = new File (outputPath);
-        File output = new File (directory, outputFileName);
+        File directory = new File(outputPath);
+        File output = new File(directory, outputFileName);
 
         // Using buffered writer to write the file
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(output));
-            out.write(outputText);
+            out.write(outputText.toString());
             out.close();
         } catch (FileNotFoundException e) {
             System.out.println("The path provided is not valid\n" + e);
