@@ -65,7 +65,7 @@ The program terminates when:
 
 The user should be aware that if such a '.txt' file exists with the given name at the given path, the program will override the file.
 
-The program round the floating point values to the nearest 1st decimal place. Therefore, there are small differences from the output files under sample_in_out folder. The output files created by the program can be found under SampleOutput folder.
+The program round the floating point values to the nearest 1st decimal place. Therefore, there are small differences from the output files under sample_in_out folder. The output files created by the program based on the sample input files provided can be found under SampleOutput folder.
 
 # Usage
 For using the NearestCoordinates, simply clone the project using 'git clone' command. Compile the project.
