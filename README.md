@@ -121,7 +121,7 @@ The program is executed for each of the sample files 3 times:
 |sample_input_100_100   |    26815   nanoseconds |   17581  nanoseconds  |   22630   nanoseconds |
 
 # Experiment
-An experiment is conducted on changing the number of points (rows) and number of dimensions (columns) independently. The input used for the experiment can be found under **ExperimentFiles**. For filling the data randbetween() function of Excel program is used with arguments -1000000 for bottom and 1000000 for top.
+Two different experiments are conducted on changing the number of points (rows) and number of dimensions (columns) independently. The inputs used for the experiments can be found under **ExperimentFiles**. For filling the data randbetween() function of Excel program is used, with arguments -1000000 for bottom and 1000000 for top. For second experiment the transpose of the data used in Experiment 1 is used.
 
 **Experiment 1**
 
@@ -134,7 +134,7 @@ In the following experiment computation time (dependent variable) was measured w
 |instance_1000_dimension_10.tsv     |   43495   nanoseconds  |  37857   nanoseconds |   42138   nanoseconds |
 |instance_10000_dimension_10.tsv    |   3815874 nanoseconds  |  3832878 nanoseconds |   3751713 nanoseconds |
 
-Here, as it was expected to be, as the number of points increase linearly the computation time increases quadratically which shows us that the algorithm works in the order of O(N<sup>2</sup>M).
+Here, as it was expected to be, as the number of points increase linearly the computation time increases quadratically, which shows us that the algorithm works in the order of O(N<sup>2</sup>M).
 
 **Experiment 2**
 
@@ -142,3 +142,9 @@ In the following experiment computation time (dependent variable) was measured w
 
 |                                   |    Trial 1             |   Trial 2            | Trial 3               |
 |-----------------------------------|-----------------------:|---------------------:|----------------------:|
+|instance_10_dimension_10.tsv       |   226     nanoseconds  |  316     nanoseconds |   233     nanoseconds |
+|instance_10_dimension_100.tsv      |   1070    nanoseconds  |  1850    nanoseconds |   1377    nanoseconds |
+|instance_10_dimension_1000.tsv     |   4406    nanoseconds  |  3631    nanoseconds |   5505    nanoseconds |
+|instance_10_dimension_10000.tsv    |   20162   nanoseconds  |  21666   nanoseconds |   25040   nanoseconds |
+
+Here, as it was expected to be, as the number of dimensions increase linearly the computation time increases linearly as well, which shows us that the algorithm works in the order of O(N<sup>2</sup>M).
