@@ -66,7 +66,7 @@ Lines that start with '+' symbol indicate the user entry, just for clarification
 
 ```diff
 Please provide the path of the tab seperated input file:
-+/Users/AlpGuvenir/Desktop/n2c/sample_in_out/sample_input_2_8.tsv
++/Users/AlpGuvenir/Desktop/NearestPoints/sample_in_out/sample_input_2_8.tsv
 The file provided is valid
 Points with minimum distance are at:
 Row:3 and Row:6
