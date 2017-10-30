@@ -133,7 +133,7 @@ public class NearestPoints {
         int[] nearestCoordinates = new int[2];
         double minimumDistance = Double.POSITIVE_INFINITY;
         double squaredDistance = 0;
-        double squarerootDistance = 0;
+        // double squarerootDistance = 0; // No need to take the square root
 
         // Two Double arrays for calculations
         Double[] row1 = null;
