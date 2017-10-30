@@ -5,8 +5,6 @@
  * Alp Güvenir
 */
 
-// /Users/AlpGuvenir/Desktop/n2c/sample_in_out/sample_input_2_8.tsv
-
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
